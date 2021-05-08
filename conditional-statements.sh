@@ -60,3 +60,5 @@ then
 else
     echo "no d is not empty"
 fi
+
+[ -z "$d" ] && echo "Empty" || echo "Not empty"
