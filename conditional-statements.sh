@@ -34,4 +34,29 @@ else
     echo "all false"
 fi
 
-#3. case statement
+#3. string comparision
+
+a="aa"
+b="k"
+c="aa"
+d=""
+
+if [ $a == $c ]
+then
+    echo "i am in if condition"
+elif [[ $a != $b ]]
+then
+    echo "I am in first elif condition"
+elif [[ $a < $b ]]
+then
+    echo "I am in second elif condition"
+else
+    echo "I am in else condition"
+fi
+
+if [ -z $d ]  # same as [[ $d == "" ]]
+then 
+    echo "d is empty"
+else
+    echo "no d is not empty"
+fi

@@ -12,3 +12,6 @@ echo "First argument: ${args[0]}"
 echo "Second argument: ${args[1]}"
 echo "Third argument: ${args[2]}"
 
+echo $@  # prints all the arguments
+echo $#  # prints number of arguments passed to script
+
